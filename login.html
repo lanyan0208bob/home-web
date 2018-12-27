@@ -8,22 +8,15 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <link rel="alternate icon" type="image/png" href="i/favicon.png">
-  <link rel="stylesheet" href="css/amazeui.min.css"/>
-  <link rel="stylesheet" href="iconfont/iconfont.css"/>
-  <style>
-    .header {
-      text-align: center;
-    }
-    .header h1 {
-      font-size: 200%;
-      color: #333;
-      margin-top: 30px;
-    }
-    .header p {
-      font-size: 14px;
-    }
-  </style>
+  <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/iconfont/iconfont.css"/>
+  <link rel="stylesheet" href="assets/css/login.css"/>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <script type="text/javascript" src="js/server.js"></script>-->
+  <script type="text/javascript" src="assets/js/login/login.js"></script>
 </head>
 <body>
 <div class="header">
@@ -40,17 +33,16 @@
     <div class="am-btn-group">
       <a href="#" class="am-btn am-btn-secondary am-btn-sm"><i class="iconfont am-icon-sm" >&#xe73e;</i>&ensp;Q&ensp;&ensp;Q&ensp;</a>
       <a href="#" class="am-btn am-btn-success am-btn-sm"><i class="iconfont am-icon-sm">&#xe64f;</i> 微&ensp;&ensp;信</a>
-      <a href="#" class="am-btn am-btn-primary am-btn-sm"><i class="iconfont am-icon-sm">&#xe71c;</i> 手机号</a>
+      <a href="#" class="am-btn am-btn-primary am-btn-sm"><i class="iconfont am-icon-sm">&#xe6ec;</i> 支付宝</a>
     </div>
     <br>
     <br>
-
-    <form method="post" class="am-form">
-      <label for="email">账号:</label>
-      <input type="email" name="" id="email" value="">
+    <form method="post" class="am-form"  >
+      <label for="username">账号:</label>
+      <input type="text" name="username" id="username" />
       <br>
       <label for="password">密码:</label>
-      <input type="password" name="" id="password" value="">
+      <input type="password" name="password" id="password" />
       <br>
       <label for="remember-me">
         <input id="remember-me" type="checkbox">
@@ -58,8 +50,8 @@
       </label>
       <br />
       <div class="am-cf">
-        <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
-        <input type="submit" name="" value="忘记密码 ^_^? " class="am-btn am-btn-default am-btn-sm am-fr">
+        <input type="submit"   id="loginSubmit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
+        <input type="button" name="" value="忘记密码 ^_^? " class="am-btn am-btn-default am-btn-sm am-fr">
       </div>
     </form>
     <hr>
