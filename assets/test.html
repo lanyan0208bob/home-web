@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript">
+      $.ajax({
+        contentType:"application/x-www-form-urlencoded",
+        data:"id=123",
+        dataType: "json",
+        jsonp: "callback",
+        url:"http://localhost:8008/home-webapp/admin/test",
+        success:function(data){
+          alert(data);
+          alert(data.code);
+        },
+        fail:function (data) {
+          alert("失败"+data);
+        }
+      })
+    function println(data) {
+      alert(data);
+      console.log(data);
+      console.log('print');
+    }
+    // })
+  </script>
+</head>
+<body>
+
+</body>
+</html>
